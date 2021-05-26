@@ -21,7 +21,7 @@ This case study is contained within the [Serious SQL](https://www.datawithdanny.
 
 ---
 ## **II. SOLUTIONS**
-Before going into each question case by case, I needed to have a further analysis into the dataset in order to further understand different variables and values needed to answer questions. Therefore, following queries were executed as below:
+Before going into each question case by case, I needed to have a further analysis into the dataset in order to further understand different variables and values needed to answer questions. Therefore, the following query was executed as below:
 ```sql
 SELECT * FROM health.user_logs;
 ```
@@ -35,7 +35,7 @@ I noticed that the **`measure`** column's values are divided into different vari
 <img src="https://github.com/nduongthucanh/Health-Analytics-Mini-Case-Study/blob/main/IMG/z2513953538301_86b8f067910a3700d4d4199e7bf5e690.jpg" width=60% height=60%>
 </p>
 
-Therefore, **```DISTINCT```** syntax was useful to have a more detailed data evaluation into this column: 
+Therefore, **```DISTINCT```** function was useful to have a more detailed data evaluation of this column: 
 
 ```sql
 SELECT DISTINCT measure FROM health.user_logs;
