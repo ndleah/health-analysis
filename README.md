@@ -1,9 +1,18 @@
+[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-red?logo=GitHub)](https://github.com/nduongthucanh)
 # **SERIOUS SQL: HEALTH ANALYTICS MINI CASE STUDY**
 
 <p align="center">
   <img width="300" height="300" src="https://s3.amazonaws.com/thinkific-import/357412/n0nS0vA3RmOtzsH99jyf_Data_With_Danny_Round_Logo_png">
 </p>
 
+# Table of contents
+<!--ts-->
+   * [Overview](#**I.-OVERVIEW**)
+   * [Solutions](#**II.-SOLUTIONS**)
+   * [Key Highlights](#**III.-KEY-HIGHLIGHTS**)
+
+---
+  
 ## **I. OVERVIEW**
 This case study is contained within the [Serious SQL](https://www.datawithdanny.com) by [Danny Ma](https://www.linkedin.com/in/datawithdanny/). With the **Health Analytics Mini Case Study**, I queried data to bring insights to the following questions:
 1. How many `unique users` exist in the logs dataset?
@@ -173,7 +182,7 @@ Result:
 |---------------|----------------|
 |126            |79              |
 ---
-## **KEY HIGHLIGHTS**
+## **III. KEY HIGHLIGHTS**
 > **Initial thoughts:** 
 Even though this is a short assignment which cover basic SQL syntax, I did run into problems several time during the solving process. However, it helped me to have a better understanding about data exploration using SQL from theories to real life application.
 
