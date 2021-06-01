@@ -1,19 +1,19 @@
-[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-red?logo=GitHub)](https://github.com/nduongthucanh)
+[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-red?logo=GitHub)](https://github.com/nduongthucanh) ![fork](https://img.shields.io/github/forks/nduongthucanh/Health-Analytics-Mini-Case-Study) ![star](https://img.shields.io/github/stars/nduongthucanh/Health-Analytics-Mini-Case-Study) 
 # **SERIOUS SQL: HEALTH ANALYTICS MINI CASE STUDY**
 
 <p align="center">
-  <img width="300" height="300" src="https://s3.amazonaws.com/thinkific-import/357412/n0nS0vA3RmOtzsH99jyf_Data_With_Danny_Round_Logo_png">
+  <img width="200" height="200" src="https://s3.amazonaws.com/thinkific-import/357412/n0nS0vA3RmOtzsH99jyf_Data_With_Danny_Round_Logo_png">
 </p>
 
-# Table of contents
+## **Table of contents** :bookmark_tabs:
 <!--ts-->
-   * [Overview](#**I.-OVERVIEW**)
-   * [Solutions](#**II.-SOLUTIONS**)
-   * [Key Highlights](#**III.-KEY-HIGHLIGHTS**)
+   * [Overview](#**OVERVIEW**)
+   * [Solutions](#**SOLUTIONS**)
+   * [Key Highlights](#KEY-HIGHLIGHTS**)
 
 ---
   
-## **I. OVERVIEW**
+## **OVERVIEW**
 This case study is contained within the [Serious SQL](https://www.datawithdanny.com) by [Danny Ma](https://www.linkedin.com/in/datawithdanny/). With the **Health Analytics Mini Case Study**, I queried data to bring insights to the following questions:
 1. How many `unique users` exist in the logs dataset?
 2. How many total `measurements` do we have `per user on average`?
@@ -29,7 +29,7 @@ This case study is contained within the [Serious SQL](https://www.datawithdanny.
 </p>
 
 ---
-## **II. SOLUTIONS**
+## **SOLUTIONS** :bulb:
 Before going into each question case by case, I needed to have a further analysis into the dataset in order to understand different variables and values needed to answer questions. Therefore, the following query was executed:
 ```sql
 SELECT * FROM health.user_logs;
@@ -55,7 +55,8 @@ SELECT DISTINCT measure FROM health.user_logs;
 After running the query, I knew that there are total 3 variables within the **`measure`** column which are `blood_glucose`, `blood_pressure`, `weight`. I then had enough necessary information that I needed for data analysis. Next, I started to run into each question and **SOLVE IT!**
 
 ---
-### 1. **How many unique users exist in the logs dataset?**
+![Question 1](https://img.shields.io/badge/Question-1-971901)
+### **How many unique users exist in the logs dataset?**
 ```sql
 SELECT COUNT (DISTINCT id)
 FROM health.user_logs;
@@ -85,7 +86,8 @@ Result:
   GROUP BY 1;
   ```
   ---
-### 2. **How many total measurements do we have per user on average?**
+![Question 2](https://img.shields.io/badge/Question-2-971901)
+### **How many total measurements do we have per user on average?**
 ```sql
 SELECT
   ROUND (AVG(measure_count), 2) AS mean_value
@@ -96,8 +98,11 @@ Result:
 |mean_value                              |
 |----------------------------------------|
 |79.23                                   |
+
 ---
-### 3. **What about the median number of measurements per user?**
+
+![Question 3](https://img.shields.io/badge/Question-3-971901)
+### **What about the median number of measurements per user?**
 ```sql 
 SELECT 
    PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY measure_count) AS median_value 
@@ -107,8 +112,11 @@ Result:
 |median_value                            |
 |----------------------------------------|
 |2                                       |
+
 ---
-### 4. **How many users have 3 or more measurements?**
+
+![Question 4](https://img.shields.io/badge/Question-4-971901)
+### **How many users have 3 or more measurements?**
 ```sql
 SELECT COUNT(*)
 FROM user_measure_count
@@ -118,8 +126,11 @@ Result:
 |count                                   |
 |----------------------------------------|
 |209                                     |
+
 ---
-### 5. **How many users have 1,000 or more measurements?**
+
+![Question 5](https://img.shields.io/badge/Question-5-971901)
+### **How many users have 1,000 or more measurements?**
 ```sql 
 SELECT COUNT(*)
 FROM user_measure_count
@@ -129,9 +140,11 @@ Result:
 |count                                   |
 |----------------------------------------|
 |5                                       |
+
 ---
 
-### 6. **Have logged blood glucose measurements?**
+![Question 6](https://img.shields.io/badge/Question-6-971901)
+### **Have logged blood glucose measurements?**
 ```sql
 SELECT 
   COUNT(DISTINCT id)
@@ -142,7 +155,10 @@ Result:
 |count                                   |
 |----------------------------------------|
 |325                                     |
+
 ---
+
+![Question 7](https://img.shields.io/badge/Question-7-971901)
 ### 7. **Have at least 2 types of measurements?**
 ```sql
 SELECT 
@@ -155,9 +171,11 @@ Result:
 |count                                   |
 |----------------------------------------|
 |204                                     |
+
 ---
 
-### 8. **Have all 3 measures - blood glucose, weight and blood pressure?**
+![Question 8](https://img.shields.io/badge/Question-8-971901)
+### **Have all 3 measures - blood glucose, weight and blood pressure?**
 ```sql
 SELECT
   COUNT(*)
@@ -168,8 +186,11 @@ Result:
 |count                                   |
 |----------------------------------------|
 |50                                      |
+
 ---
-### 9. **What is the median systolic/diastolic blood pressure values?**
+
+![Question 9](https://img.shields.io/badge/Question-9-971901)
+### **What is the median systolic/diastolic blood pressure values?**
 ```sql
 SELECT
   PERCENTILE_CONT(0.5) WITHIN GROUP(ORDER BY systolic) AS median_systolic,
@@ -182,7 +203,7 @@ Result:
 |---------------|----------------|
 |126            |79              |
 ---
-## **III. KEY HIGHLIGHTS**
+## **KEY HIGHLIGHTS** :speech_balloon:
 > **Initial thoughts:** 
 Even though this is a short assignment which cover basic SQL syntax, I did run into problems several time during the solving process. However, it helped me to have a better understanding about data exploration using SQL from theories to real life application.
 
