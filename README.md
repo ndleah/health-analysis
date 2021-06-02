@@ -3,7 +3,19 @@
 ![repo size](https://img.shields.io/github/repo-size/nduongthucanh/Health-Analytics-Mini-Case-Study?color=green&style=flat-square)
 ![fork](https://img.shields.io/github/forks/nduongthucanh/Health-Analytics-Mini-Case-Study) ![star](https://img.shields.io/github/stars/nduongthucanh/Health-Analytics-Mini-Case-Study)
 
+
+
 # **SERIOUS SQL: HEALTH ANALYTICS MINI CASE STUDY**
+
+
+<p align="center">
+  <img src="https://forthebadge.com/images/badges/built-with-love.svg">
+  <img src="https://forthebadge.com/images/badges/powered-by-coffee.svg">
+</p>
+
+<p align="center">
+  <img src="https://forthebadge.com/images/badges/check-it-out.svg">
+</p>
 
 <p align="center">
   <img width="250" height="250" src="https://s3.amazonaws.com/thinkific-import/357412/n0nS0vA3RmOtzsH99jyf_Data_With_Danny_Round_Logo_png">
