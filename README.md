@@ -1,8 +1,9 @@
-[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-red?logo=GitHub)](https://github.com/nduongthucanh) ![fork](https://img.shields.io/github/forks/nduongthucanh/Health-Analytics-Mini-Case-Study) ![star](https://img.shields.io/github/stars/nduongthucanh/Health-Analytics-Mini-Case-Study) 
+[![View on GitHub](https://img.shields.io/badge/GitHub-View_on_GitHub-red?logo=GitHub)](https://github.com/nduongthucanh) ![fork](https://img.shields.io/github/forks/nduongthucanh/Health-Analytics-Mini-Case-Study) ![star](https://img.shields.io/github/stars/nduongthucanh/Health-Analytics-Mini-Case-Study)
+![repo size](https://img.shields.io/github/repo-size/nduongthucanh/Health-Analytics-Mini-Case-Study?color=green&style=flat-square)
 # **SERIOUS SQL: HEALTH ANALYTICS MINI CASE STUDY**
 
 <p align="center">
-  <img width="200" height="200" src="https://s3.amazonaws.com/thinkific-import/357412/n0nS0vA3RmOtzsH99jyf_Data_With_Danny_Round_Logo_png">
+  <img width="250" height="250" src="https://s3.amazonaws.com/thinkific-import/357412/n0nS0vA3RmOtzsH99jyf_Data_With_Danny_Round_Logo_png">
 </p>
 
 ## **Table of contents** :bookmark_tabs:
@@ -61,7 +62,7 @@ After running the query, I knew that there are total 3 variables within the **`m
 SELECT COUNT (DISTINCT id)
 FROM health.user_logs;
 ```
-Result:
+⚡ Result:
 
 |count                                   |
 |----------------------------------------|
@@ -94,7 +95,7 @@ SELECT
 FROM user_measure_count;
 ```
 
-Result:
+⚡ Result:
 |mean_value                              |
 |----------------------------------------|
 |79.23                                   |
@@ -108,7 +109,7 @@ SELECT
    PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY measure_count) AS median_value 
 FROM user_measure_count;
 ```
-Result:
+⚡ Result:
 |median_value                            |
 |----------------------------------------|
 |2                                       |
@@ -122,7 +123,7 @@ SELECT COUNT(*)
 FROM user_measure_count
 WHERE measure_count >= 3;
 ```
-Result:
+⚡ Result:
 |count                                   |
 |----------------------------------------|
 |209                                     |
@@ -136,7 +137,7 @@ SELECT COUNT(*)
 FROM user_measure_count
 WHERE measure_count >= 1000;
 ```
-Result:
+⚡ Result:
 |count                                   |
 |----------------------------------------|
 |5                                       |
@@ -151,7 +152,7 @@ SELECT
 FROM health.user_logs
 WHERE measure = 'blood_glucose';
 ```
-Result:
+⚡ Result:
 |count                                   |
 |----------------------------------------|
 |325                                     |
@@ -167,7 +168,7 @@ FROM user_measure_count
 WHERE unique_measures >= 2;
 ```
 
-Result:
+⚡ Result:
 |count                                   |
 |----------------------------------------|
 |204                                     |
@@ -182,7 +183,7 @@ SELECT
 FROM user_measure_count
 WHERE unique_measures = 3;
 ```
-Result:
+⚡ Result:
 |count                                   |
 |----------------------------------------|
 |50                                      |
@@ -198,7 +199,7 @@ SELECT
 FROM health.user_logs
 WHERE measure = 'blood_pressure';
 ```
-Result:
+⚡ Result:
 |median_systolic|median_diastolic|
 |---------------|----------------|
 |126            |79              |
