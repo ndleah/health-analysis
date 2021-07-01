@@ -6,7 +6,7 @@
 
 
 
-# **SERIOUS SQL: HEALTH ANALYTICS MINI CASE STUDY**
+# **SERIOUS SQL: HEALTH ANALYTICS MINI CASE STUDY** <img src="https://s3.amazonaws.com/thinkific-import/357412/n0nS0vA3RmOtzsH99jyf_Data_With_Danny_Round_Logo_png" align="right" width="120" />
 
 
 <p align="center">
@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-  <img width="250" height="250" src="https://s3.amazonaws.com/thinkific-import/357412/n0nS0vA3RmOtzsH99jyf_Data_With_Danny_Round_Logo_png">
+<img src="https://github.com/nduongthucanh/Health-Analytics-Mini-Case-Study/blob/main/IMG/BigDataInHospitals.jpg" width=100% height=100%>
 </p>
 
 ## **Table of contents** :bookmark_tabs:
@@ -41,9 +41,6 @@ This case study is contained within the [Serious SQL](https://www.datawithdanny.
 7. Have `at least 2 types` of measurements?
 8. Have all 3 measures - `blood glucose, weight and blood pressure`?
 9. What is the `median systolic/diastolic` **blood pressure** values?
-<p align="center">
-<img src="https://github.com/nduongthucanh/Health-Analytics-Mini-Case-Study/blob/main/IMG/BigDataInHospitals.jpg" width=60% height=60%>
-</p>
 
 ---
 ## **SOLUTIONS** :bulb:
