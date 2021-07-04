@@ -1,12 +1,16 @@
 ![Star Badge](https://img.shields.io/static/v1?label=%F0%9F%8C%9F&message=If%20Useful&style=style=flat&color=BC4E99)
+![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)
+[![View My Profile](https://img.shields.io/badge/View-My_Profile-green?logo=GitHub)](https://github.com/nduongthucanh)
 [![View Repositories](https://img.shields.io/badge/View-My_Repositories-blue?logo=GitHub)](https://github.com/nduongthucanh?tab=repositories)
-[![View My Profile](https://img.shields.io/badge/View-My_Profile-green?logo=GitHub)](https://github.com/nduongthucanh) 
-![repo size](https://img.shields.io/github/repo-size/nduongthucanh/Health-Analytics-Mini-Case-Study?color=green&style=flat-square)
-![fork](https://img.shields.io/github/forks/nduongthucanh/Health-Analytics-Mini-Case-Study) ![star](https://img.shields.io/github/stars/nduongthucanh/Health-Analytics-Mini-Case-Study)
+
+# Serious SQL: Health Analytics Case Study <img src="https://s3.amazonaws.com/thinkific-import/357412/n0nS0vA3RmOtzsH99jyf_Data_With_Danny_Round_Logo_png" align="right" width="120" />
 
 
-
-# **SERIOUS SQL: HEALTH ANALYTICS MINI CASE STUDY** <img src="https://s3.amazonaws.com/thinkific-import/357412/n0nS0vA3RmOtzsH99jyf_Data_With_Danny_Round_Logo_png" align="right" width="120" />
+## 📕 **Table of contents**
+<!--ts-->
+   * 🛠️ [Overview](#️-overview)
+   * 🚀 [Solutions](#-solutions)
+   * 💻 [Key Highlights](#-solutions)
 
 
 <p align="center">
@@ -22,15 +26,9 @@
 <img src="https://github.com/nduongthucanh/Health-Analytics-Mini-Case-Study/blob/main/IMG/BigDataInHospitals.jpg" width=100% height=100%>
 </p>
 
-## **Table of contents** :bookmark_tabs:
-<!--ts-->
-   * [Overview](#**OVERVIEW**)
-   * [Solutions](#**SOLUTIONS**)
-   * [Key Highlights](#KEY-HIGHLIGHTS**)
-
 ---
   
-## **OVERVIEW**
+## 🛠️ **Overview**
 This case study is contained within the [Serious SQL](https://www.datawithdanny.com) by [Danny Ma](https://www.linkedin.com/in/datawithdanny/). With the **Health Analytics Mini Case Study**, I queried data to bring insights to the following questions:
 1. How many `unique users` exist in the logs dataset?
 2. How many total `measurements` do we have `per user on average`?
@@ -43,7 +41,7 @@ This case study is contained within the [Serious SQL](https://www.datawithdanny.
 9. What is the `median systolic/diastolic` **blood pressure** values?
 
 ---
-## **SOLUTIONS** :bulb:
+## 🚀 **SOLUTIONS**
 Before going into each question case by case, I needed to have a further analysis into the dataset in order to understand different variables and values needed to answer questions. Therefore, the following query was executed:
 ```sql
 SELECT * FROM health.user_logs;
@@ -217,7 +215,7 @@ WHERE measure = 'blood_pressure';
 |---------------|----------------|
 |126            |79              |
 ---
-## **KEY HIGHLIGHTS** :speech_balloon:
+## 💻 **KEY HIGHLIGHTS**
 > **Initial thoughts:** 
 Even though this is a short assignment which cover basic SQL syntax, I did run into problems several time during the solving process. However, it helped me to have a better understanding about data exploration using SQL from theories to real life application.
 
