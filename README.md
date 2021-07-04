@@ -10,7 +10,7 @@
 <!--ts-->
    * 🛠️ [Overview](#️-overview)
    * 🚀 [Solutions](#-solutions)
-   * 💻 [Key Highlights](#-solutions)
+   * 💻 [Key Highlights](#-key-highlight)
 
 
 <p align="center">
@@ -41,7 +41,7 @@ This case study is contained within the [Serious SQL](https://www.datawithdanny.
 9. What is the `median systolic/diastolic` **blood pressure** values?
 
 ---
-## 🚀 **SOLUTIONS**
+## 🚀 **Solutions**
 Before going into each question case by case, I needed to have a further analysis into the dataset in order to understand different variables and values needed to answer questions. Therefore, the following query was executed:
 ```sql
 SELECT * FROM health.user_logs;
@@ -215,7 +215,7 @@ WHERE measure = 'blood_pressure';
 |---------------|----------------|
 |126            |79              |
 ---
-## 💻 **KEY HIGHLIGHTS**
+## 💻 **Key Highlight**
 > **Initial thoughts:** 
 Even though this is a short assignment which cover basic SQL syntax, I did run into problems several time during the solving process. However, it helped me to have a better understanding about data exploration using SQL from theories to real life application.
 
