@@ -1,17 +1,15 @@
 ![Star Badge](https://img.shields.io/static/v1?label=%F0%9F%8C%9F&message=If%20Useful&style=style=flat&color=BC4E99)
 ![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)
-[![View My Profile](https://img.shields.io/badge/View-My_Profile-green?logo=GitHub)](https://github.com/nduongthucanh)
-[![View Repositories](https://img.shields.io/badge/View-My_Repositories-blue?logo=GitHub)](https://github.com/nduongthucanh?tab=repositories)
+[![View My Profile](https://img.shields.io/badge/View-My_Profile-green?logo=GitHub)](https://github.com/ndleah)
+[![View Repositories](https://img.shields.io/badge/View-My_Repositories-blue?logo=GitHub)](https://github.com/ndleah?tab=repositories)
 
 # Serious SQL: Health Analytics Case Study <img src="https://s3.amazonaws.com/thinkific-import/357412/n0nS0vA3RmOtzsH99jyf_Data_With_Danny_Round_Logo_png" align="right" width="120" />
-
 
 ## 📕 **Table of contents**
 <!--ts-->
    * 🛠️ [Overview](#️-overview)
    * 🚀 [Solutions](#-solutions)
    * 💻 [Key Highlights](#-key-highlight)
-
 
 <p align="center">
   <img src="https://forthebadge.com/images/badges/built-with-love.svg">
@@ -23,7 +21,7 @@
 </p>
 
 <p align="center">
-<img src="https://github.com/nduongthucanh/Health-Analytics-Mini-Case-Study/blob/main/IMG/BigDataInHospitals.jpg" width=100% height=100%>
+<img src="https://github.com/ndleah/Health-Analytics-Mini-Case-Study/blob/main/IMG/BigDataInHospitals.jpg" width=100% height=100%>
 </p>
 
 ---
@@ -48,12 +46,12 @@ SELECT * FROM health.user_logs;
 ```
 As transparent from the table, there are total **6 columns** which contains values of `id`, `log_date`, `measure`, `measure_value`, `systolic` and `diastolic`. 
 <p align="center">
-<img src="https://github.com/nduongthucanh/Health-Analytics-Mini-Case-Study/blob/main/IMG/z2513921830835_b2f645dc08b9ae4ecfd59aa2f37f74f5.jpg" width=100% height=100%>
+<img src="https://github.com/ndleah/Health-Analytics-Mini-Case-Study/blob/main/IMG/z2513921830835_b2f645dc08b9ae4ecfd59aa2f37f74f5.jpg" width=100% height=100%>
 </p>
 
 I noticed that the **`measure`** column's values are divided into different variables. However, these variables were hidden due to large number of dataset. 
 <p align="center">
-<img src="https://github.com/nduongthucanh/Health-Analytics-Mini-Case-Study/blob/main/IMG/z2513953538301_86b8f067910a3700d4d4199e7bf5e690.jpg" width=60% height=60%>
+<img src="https://github.com/ndleah/Health-Analytics-Mini-Case-Study/blob/main/IMG/z2513953538301_86b8f067910a3700d4d4199e7bf5e690.jpg" width=60% height=60%>
 </p>
 
 Therefore, **```DISTINCT```** function was useful to have a more detailed data evaluation of this column: 
@@ -62,7 +60,7 @@ Therefore, **```DISTINCT```** function was useful to have a more detailed data e
 SELECT DISTINCT measure FROM health.user_logs;
 ```
 <p align="center">
-<img src="https://github.com/nduongthucanh/Health-Analytics-Mini-Case-Study/blob/main/IMG/z2513958512711_8698af869ba03d103dd7a1ef2fe33e79.jpg" width=100% height=100%>
+<img src="https://github.com/ndleah/Health-Analytics-Mini-Case-Study/blob/main/IMG/z2513958512711_8698af869ba03d103dd7a1ef2fe33e79.jpg" width=100% height=100%>
 
 After running the query, I knew that there are total 3 variables within the **`measure`** column which are `blood_glucose`, `blood_pressure`, `weight`. I then had enough necessary information that I needed for data analysis. Next, I started to run into each question and **SOLVE IT!**
 
