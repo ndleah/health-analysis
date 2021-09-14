@@ -3,31 +3,19 @@
 [![View My Profile](https://img.shields.io/badge/View-My_Profile-green?logo=GitHub)](https://github.com/ndleah)
 [![View Repositories](https://img.shields.io/badge/View-My_Repositories-blue?logo=GitHub)](https://github.com/ndleah?tab=repositories)
 
-# Serious SQL: Health Analytics Case Study <img src="https://s3.amazonaws.com/thinkific-import/357412/n0nS0vA3RmOtzsH99jyf_Data_With_Danny_Round_Logo_png" align="right" width="120" />
+# Health Analytics Case Study <img src="/IMG/pngwing.com.png" align="right" width="120" />
 
+> This case study is contained within the [Serious SQL](https://www.datawithdanny.com) by [Danny Ma](https://www.linkedin.com/in/datawithdanny/)
+> 
 ## 📕 **Table of contents**
 <!--ts-->
    * 🛠️ [Overview](#️-overview)
    * 🚀 [Solutions](#-solutions)
    * 💻 [Key Highlights](#-key-highlight)
 
-<p align="center">
-  <img src="https://forthebadge.com/images/badges/built-with-love.svg">
-  <img src="https://forthebadge.com/images/badges/powered-by-coffee.svg">
-</p>
 
-<p align="center">
-  <img src="https://forthebadge.com/images/badges/check-it-out.svg">
-</p>
-
-<p align="center">
-<img src="https://github.com/ndleah/Health-Analytics-Mini-Case-Study/blob/main/IMG/BigDataInHospitals.jpg" width=100% height=100%>
-</p>
-
----
-  
-## 🛠️ **Overview**
-This case study is contained within the [Serious SQL](https://www.datawithdanny.com) by [Danny Ma](https://www.linkedin.com/in/datawithdanny/). With the **Health Analytics Mini Case Study**, I queried data to bring insights to the following questions:
+## 🛠️ Overview
+With the **Health Analytics Mini Case Study**, I queried data to bring insights to the following questions:
 1. How many `unique users` exist in the logs dataset?
 2. How many total `measurements` do we have `per user on average`?
 3. What about the `median` number of measurements per user?
@@ -39,7 +27,7 @@ This case study is contained within the [Serious SQL](https://www.datawithdanny.
 9. What is the `median systolic/diastolic` **blood pressure** values?
 
 ---
-## 🚀 **Solutions**
+## 🚀 Solutions
 Before going into each question case by case, I needed to have a further analysis into the dataset in order to understand different variables and values needed to answer questions. Therefore, the following query was executed:
 ```sql
 SELECT * FROM health.user_logs;
@@ -71,13 +59,12 @@ After running the query, I knew that there are total 3 variables within the **`m
 SELECT COUNT (DISTINCT id)
 FROM health.user_logs;
 ```
-⚡ Result:
 
 |count                                   |
 |----------------------------------------|
 |554                                     |
 
----
+
 
 **`Note:` For question 2-8, I created a temporary table:**
 
@@ -95,7 +82,7 @@ FROM health.user_logs;
   FROM health.user_logs
   GROUP BY 1;
   ```
-  ---
+
 ![Question 2](https://img.shields.io/badge/Question-2-971901)
 ### **How many total measurements do we have per user on average?**
 ```sql
@@ -104,7 +91,6 @@ SELECT
 FROM user_measure_count;
 ```
 
-⚡ Result:
 |mean_value                              |
 |----------------------------------------|
 |79.23                                   |
@@ -118,12 +104,12 @@ SELECT
    PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY measure_count) AS median_value 
 FROM user_measure_count;
 ```
-⚡ Result:
+
 |median_value                            |
 |----------------------------------------|
 |2                                       |
 
----
+
 
 ![Question 4](https://img.shields.io/badge/Question-4-971901)
 ### **How many users have 3 or more measurements?**
@@ -132,12 +118,11 @@ SELECT COUNT(*)
 FROM user_measure_count
 WHERE measure_count >= 3;
 ```
-⚡ Result:
+
 |count                                   |
 |----------------------------------------|
 |209                                     |
 
----
 
 ![Question 5](https://img.shields.io/badge/Question-5-971901)
 ### **How many users have 1,000 or more measurements?**
@@ -146,7 +131,7 @@ SELECT COUNT(*)
 FROM user_measure_count
 WHERE measure_count >= 1000;
 ```
-⚡ Result:
+
 |count                                   |
 |----------------------------------------|
 |5                                       |
@@ -161,7 +146,7 @@ SELECT
 FROM health.user_logs
 WHERE measure = 'blood_glucose';
 ```
-⚡ Result:
+
 |count                                   |
 |----------------------------------------|
 |325                                     |
@@ -177,7 +162,7 @@ FROM user_measure_count
 WHERE unique_measures >= 2;
 ```
 
-⚡ Result:
+
 |count                                   |
 |----------------------------------------|
 |204                                     |
@@ -192,7 +177,7 @@ SELECT
 FROM user_measure_count
 WHERE unique_measures = 3;
 ```
-⚡ Result:
+
 |count                                   |
 |----------------------------------------|
 |50                                      |
@@ -208,12 +193,12 @@ SELECT
 FROM health.user_logs
 WHERE measure = 'blood_pressure';
 ```
-⚡ Result:
+
 |median_systolic|median_diastolic|
 |---------------|----------------|
 |126            |79              |
 ---
-## 💻 **Key Highlight**
+## 💻 Key Highlight
 > **Initial thoughts:** 
 Even though this is a short assignment which cover basic SQL syntax, I did run into problems several time during the solving process. However, it helped me to have a better understanding about data exploration using SQL from theories to real life application.
 
