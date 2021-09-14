@@ -28,31 +28,7 @@ With the **Health Analytics Mini Case Study**, I queried data to bring insights 
 
 ---
 ## 🚀 Solutions
-Before going into each question case by case, I needed to have a further analysis into the dataset in order to understand different variables and values needed to answer questions. Therefore, the following query was executed:
-```sql
-SELECT * FROM health.user_logs;
-```
-As transparent from the table, there are total **6 columns** which contains values of `id`, `log_date`, `measure`, `measure_value`, `systolic` and `diastolic`. 
-<p align="center">
-<img src="https://github.com/ndleah/Health-Analytics-Mini-Case-Study/blob/main/IMG/z2513921830835_b2f645dc08b9ae4ecfd59aa2f37f74f5.jpg" width=100% height=100%>
-</p>
 
-I noticed that the **`measure`** column's values are divided into different variables. However, these variables were hidden due to large number of dataset. 
-<p align="center">
-<img src="https://github.com/ndleah/Health-Analytics-Mini-Case-Study/blob/main/IMG/z2513953538301_86b8f067910a3700d4d4199e7bf5e690.jpg" width=60% height=60%>
-</p>
-
-Therefore, **```DISTINCT```** function was useful to have a more detailed data evaluation of this column: 
-
-```sql
-SELECT DISTINCT measure FROM health.user_logs;
-```
-<p align="center">
-<img src="https://github.com/ndleah/Health-Analytics-Mini-Case-Study/blob/main/IMG/z2513958512711_8698af869ba03d103dd7a1ef2fe33e79.jpg" width=100% height=100%>
-
-After running the query, I knew that there are total 3 variables within the **`measure`** column which are `blood_glucose`, `blood_pressure`, `weight`. I then had enough necessary information that I needed for data analysis. Next, I started to run into each question and **SOLVE IT!**
-
----
 ![Question 1](https://img.shields.io/badge/Question-1-971901)
 ### **How many unique users exist in the logs dataset?**
 ```sql
